@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0; /* Remove default margin */
+    position: relative; /* Ensure body is the positioning context */
+    background-color: white;
+   
+
+}
+
+.head {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* This will cover the background image behind it */
+    text-align: center;
+    text-decoration:double;
+    color: black;
+    box-sizing: border-box; /* Ensure border is included in width */
+    position: relative; /* Ensure it's positioned relative to the body */
+    z-index: 1; /* Ensure it stays on top of the background */
+    text-size-adjust: 300px;
+}
+.large-text{
+    font-size: 24px;
+}
+.ques{
+    position: relative;
+    top: 20px;
+    right: 50px;
+    left: 50px;
+    text-align: center;
+    height: 50px;
+    width: 1400px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0%;
+    margin: 0%;
+    border: 5px solid white;
+}
+.beach, .mountain {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.beach {
+    top: 200px;
+    left: 80px;
+}
+
+.beach video {
+    width: 600px;
+    height: 400px;
+    display: block;
+    position: relative;
+    border: 5px solid #000; /* Black border for the beach image */
+}
+
+.beach .btext {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mountain {
+    top: 200px;
+    left: 830px;
+}
+
+.mountain video{
+    width: 600px;
+    height: 400px;
+    display: block;
+    border: 5px solid #000; /* Black border for the mountain image */
+}
+
+.mountain .mtext {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.train video:hover{
+    height: 450px;
+    width: 680px;
+    transition: 2s;
+}
+.mountain video:hover{
+    height: 450px;
+    width: 680px;
+    transition: 2s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="head"><i><u><h1><b>Let's play this or that</b></h1></u></i></div>
+    
+
+    <h1 class="ques"><i>place you want to visit more</i></h1>
+
+    <a href="game2.htm" class="beach">
+        <video autoplay loop muted><source src="vid1.mp4"></video>
+        <h3 class="btext">Beach</h3>
+    </a>
+    <a href="game2.htm" class="mountain">
+        <video autoplay loop muted><source src="vid2.mp4"></video>
+        <h3 class="mtext">Mountains</h3>
+    </a>
+
+</body>
+</html>

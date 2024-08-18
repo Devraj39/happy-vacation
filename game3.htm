@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body {
+    margin: 0; /* Remove default margin */
+    position: relative; /* Ensure body is the positioning context */
+   
+}
+
+.head {
+    height: 100px;
+    width: 100%;
+    background-color: white; /* This will cover the background image behind it */
+    text-align: center;
+    border-width: 20px;
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box; /* Ensure border is included in width */
+    position: relative; /* Ensure it's positioned relative to the body */
+    z-index: 1; /* Ensure it stays on top of the background */
+}
+.ques{
+    position: relative;
+    top: 20px;
+    right: 50px;
+    left: 50px;
+    text-align: center;
+    height: 50px;
+    width: 1400px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0%;
+    margin: 0%;
+    border: 5px solid black;
+}
+.room, .home {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.room {
+    top: 200px;
+    left: 300px;
+}
+
+.room img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    border: 5px solid #000; /* Black border for the beach image */
+}
+
+.room .rtext {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    top: 200px;
+    right: 300px;
+}
+
+.home img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border: 5px solid #000; /* Black border for the mountain image */
+}
+
+.home .htext {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="head"><h1><b>Let's play this or that</b></h1></div>
+     
+    <h1 class="ques"><b>Which would you like to sta y</b></h1>
+
+    <a href="" class="room">
+        <img src="room.jpg" alt="room">
+        <h3 class="rtext">Hotel room</h3>
+    </a>
+    <a href="" class="home">
+        <img src="hs.jpg" alt="home">
+        <h3 class="htext">Home stay</h3>
+    </a>
+
+</body>
+</html>
